@@ -1,5 +1,5 @@
 nothing=$(git status | grep "nothing to commit")
-if [ -z $nothing ]
+if [ -n $nothing ]
 then
  git add .
  _time=$(date +%Y%m%d_%H%M%S)
