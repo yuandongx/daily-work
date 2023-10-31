@@ -5,6 +5,8 @@ then
  _time=$(date +%Y%m%d_%H%M%S)
  git commit -m "Auto-commit $_time"
  echo "Auto commit the files at $_time."
+ git pull
+ git push
 else
  echo "nothing to commit."
 fi
